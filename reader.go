@@ -2,11 +2,11 @@ package reader
 
 import (
 	"context"
+	"github.com/aaronland/gocloud-blob-bucket"
+	wof_reader "github.com/whosonfirst/go-reader"
+	"gocloud.dev/blob"
 	"io"
 	"net/url"
-	wof_reader "github.com/whosonfirst/go-whosonfirst-reader"
-	"github.com/aaronland/gocloud-blob-bucket"
-	"gocloud.dev/blob"
 )
 
 func init() {

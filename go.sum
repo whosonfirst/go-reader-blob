@@ -89,6 +89,8 @@ github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+
 github.com/stretchr/objx v0.2.0/go.mod h1:qt09Ya8vawLte6SNmTgCsAVtYtaKzEcn8ATUoHMkEqE=
 github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXfy6kDkUVs=
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
+github.com/whosonfirst/go-reader v0.0.0-20191122213718-25d6c34f3bcc h1:iZZD21HSlqi8nOgGzGb8fXjnlEO/kdVAHkBNL/k58FA=
+github.com/whosonfirst/go-reader v0.0.0-20191122213718-25d6c34f3bcc/go.mod h1:k/U2jXarXsFWC2yh63kYgKIJzTEmc60lN/ipyrdT3W4=
 github.com/whosonfirst/go-whosonfirst-reader v0.0.0-20191122203133-047f20452865 h1:1GYjmjunRhDm1E4/aM/AIhjBij8C9kMqufjS1G2P0fs=
 github.com/whosonfirst/go-whosonfirst-reader v0.0.0-20191122203133-047f20452865/go.mod h1:xYzBn6llLD/uS6Zhh0H4LAqddEJHXdQSUIxywTnhpOU=
 github.com/whosonfirst/go-whosonfirst-sources v0.1.0 h1:JuKLa6KWke22jBfJ1pM9WQHoz1/3pbDv2C+aR+THPPQ=
