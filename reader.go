@@ -2,7 +2,6 @@ package reader
 
 import (
 	"context"
-	"github.com/aaronland/gocloud-blob-bucket"
 	wof_reader "github.com/whosonfirst/go-reader"
 	"gocloud.dev/blob"
 	"io"
@@ -38,13 +37,13 @@ func (r *BlobReader) Open(ctx context.Context, uri string) error {
 
 	blob_uri := u.String()
 
-	blob_bucket, err := bucket.OpenBucket(ctx, blob_uri)
+	bucket, err := blob.OpenBucket(ctx, blob_uri)
 
 	if err != nil {
 		return err
 	}
 
-	r.bucket = blob_bucket
+	r.bucket = bucket
 	return nil
 }
 
