@@ -5,12 +5,15 @@ import (
 	wof_reader "github.com/whosonfirst/go-reader"
 	"gocloud.dev/blob"
 	"io"
-	"net/url"
 )
 
 func init() {
+
 	r := NewBlobReader()
-	wof_reader.Register("blob", r)
+
+	for _, scheme := range blob.DefaultURLMux().BucketSchemes() {
+		wof_reader.Register(scheme, r)
+	}
 }
 
 type BlobReader struct {
@@ -26,18 +29,7 @@ func NewBlobReader() wof_reader.Reader {
 
 func (r *BlobReader) Open(ctx context.Context, uri string) error {
 
-	u, err := url.Parse(uri)
-
-	if err != nil {
-		return err
-	}
-
-	u.Scheme = u.Host
-	u.Host = ""
-
-	blob_uri := u.String()
-
-	bucket, err := blob.OpenBucket(ctx, blob_uri)
+	bucket, err := blob.OpenBucket(ctx, uri)
 
 	if err != nil {
 		return err
