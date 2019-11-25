@@ -8,7 +8,7 @@ github.com/golang/protobuf/ptypes/timestamp
 github.com/googleapis/gax-go
 # github.com/hashicorp/golang-lru v0.5.1
 github.com/hashicorp/golang-lru/simplelru
-# github.com/whosonfirst/go-reader v0.0.1
+# github.com/whosonfirst/go-reader v0.0.2
 github.com/whosonfirst/go-reader
 # go.opencensus.io v0.22.0
 go.opencensus.io/stats
