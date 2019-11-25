@@ -91,6 +91,8 @@ github.com/stretchr/testify v1.2.2/go.mod h1:a8OnRcib4nhh0OaRAV+Yts87kKdq0PP7pXf
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/whosonfirst/go-reader v0.0.0-20191122213718-25d6c34f3bcc h1:iZZD21HSlqi8nOgGzGb8fXjnlEO/kdVAHkBNL/k58FA=
 github.com/whosonfirst/go-reader v0.0.0-20191122213718-25d6c34f3bcc/go.mod h1:k/U2jXarXsFWC2yh63kYgKIJzTEmc60lN/ipyrdT3W4=
+github.com/whosonfirst/go-reader v0.0.1 h1:8FAQgnOvvPBxb6PDuPF+DzYBNR8gl27ON3fY1zU2xY4=
+github.com/whosonfirst/go-reader v0.0.1/go.mod h1:k/U2jXarXsFWC2yh63kYgKIJzTEmc60lN/ipyrdT3W4=
 github.com/whosonfirst/go-whosonfirst-reader v0.0.0-20191122203133-047f20452865 h1:1GYjmjunRhDm1E4/aM/AIhjBij8C9kMqufjS1G2P0fs=
 github.com/whosonfirst/go-whosonfirst-reader v0.0.0-20191122203133-047f20452865/go.mod h1:xYzBn6llLD/uS6Zhh0H4LAqddEJHXdQSUIxywTnhpOU=
 github.com/whosonfirst/go-whosonfirst-sources v0.1.0 h1:JuKLa6KWke22jBfJ1pM9WQHoz1/3pbDv2C+aR+THPPQ=
@@ -121,6 +123,7 @@ golang.org/x/net v0.0.0-20190404232315-eb5bcb51f2a3/go.mod h1:t9HGtf8HONx5eT2rtn
 golang.org/x/net v0.0.0-20190501004415-9ce7a6920f09/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
 golang.org/x/net v0.0.0-20190503192946-f4e77d36d62c/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
 golang.org/x/net v0.0.0-20190603091049-60506f45cf65/go.mod h1:HSz+uSET+XFnRR8LxR5pz3Of3rY3CfYBVs4xY44aLks=
+golang.org/x/net v0.0.0-20190619014844-b5b0513f8c1b h1:lkjdUzSyJ5P1+eal9fxXX9Xg2BTfswsonKUse48C0uE=
 golang.org/x/net v0.0.0-20190619014844-b5b0513f8c1b/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
 golang.org/x/net v0.0.0-20190620200207-3b0461eec859 h1:R/3boaszxrf1GEUWTVDzSKVwLmSJpwZ1yqXm8j0v2QI=
 golang.org/x/net v0.0.0-20190620200207-3b0461eec859/go.mod h1:z5CRVTTTmAJ677TzLLGU+0bjPO0LkuOLi4/5GtJWs/s=
