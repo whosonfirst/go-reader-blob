@@ -9,11 +9,28 @@ import (
 
 func init() {
 
-	r := NewBlobReader()
+	ctx := context.Background()
 
 	for _, scheme := range blob.DefaultURLMux().BucketSchemes() {
-		wof_reader.Register(scheme, r)
+
+		err := wof_reader.RegisterReader(ctx, scheme, initializeBlobReader)
+
+		if err != nil {
+			panic(err)
+		}
 	}
+}
+
+func initializeBlobReader(ctx context.Context, uri string) (wof_reader.Reader, error) {
+
+	r := NewBlobReader()
+	err := r.Open(ctx, uri)
+
+	if err != nil {
+		return nil, err
+	}
+
+	return r, nil
 }
 
 type BlobReader struct {
