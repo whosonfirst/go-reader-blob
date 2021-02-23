@@ -3,6 +3,7 @@ package reader
 import (
 	"context"
 	wof_reader "github.com/whosonfirst/go-reader"
+	"github.com/whosonfirst/go-reader/ioutil"	
 	"gocloud.dev/blob"
 	"io"
 )
@@ -41,7 +42,17 @@ func NewBlobReader(ctx context.Context, uri string) (wof_reader.Reader, error) {
 	return r, nil
 }
 
-func (r *BlobReader) Read(ctx context.Context, uri string) (io.ReadCloser, error) {
+func (r *BlobReader) Read(ctx context.Context, uri string) (io.ReadSeekCloser, error) {
 
-	return r.bucket.NewReader(ctx, uri, nil)
+	fh, err := r.bucket.NewReader(ctx, uri, nil)
+
+	if err != nil {
+		return nil, err
+	}
+
+	return ioutil.NewReadSeekCloser(fh)
+}
+
+func (r *BlobReader) ReaderURI(ctx context.Context, uri string) string {
+	return uri
 }
