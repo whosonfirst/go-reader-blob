@@ -1,6 +1,10 @@
 # go-reader-blob
 
-Work in progress. This will replace [go-whosonfirst-readwrite](https://github.com/whosonfirst/go-whosonfirst-readwrite).
+GoCloud blob.Bucket support for the go-reader Reader interface.
+
+## Important
+
+Work in progress. Documentation to follow.
 
 ## See also
 
