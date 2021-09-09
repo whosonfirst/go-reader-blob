@@ -2,8 +2,8 @@ package reader
 
 import (
 	"context"
+	"github.com/whosonfirst/go-ioutil"
 	wof_reader "github.com/whosonfirst/go-reader"
-	"github.com/whosonfirst/go-ioutil"	
 	"gocloud.dev/blob"
 	"io"
 )
