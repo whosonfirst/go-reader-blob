@@ -12,7 +12,7 @@ github.com/golang/protobuf/ptypes/timestamp
 github.com/googleapis/gax-go/v2
 github.com/googleapis/gax-go/v2/apierror
 github.com/googleapis/gax-go/v2/apierror/internal/proto
-# github.com/whosonfirst/go-ioutil v1.0.0
+# github.com/whosonfirst/go-ioutil v1.0.1
 ## explicit
 github.com/whosonfirst/go-ioutil
 # github.com/whosonfirst/go-reader v0.9.0
