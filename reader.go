@@ -2,10 +2,11 @@ package reader
 
 import (
 	"context"
+	"io"
+
 	"github.com/whosonfirst/go-ioutil"
 	wof_reader "github.com/whosonfirst/go-reader"
 	"gocloud.dev/blob"
-	"io"
 )
 
 func init() {

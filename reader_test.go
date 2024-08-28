@@ -3,12 +3,13 @@ package reader
 import (
 	"context"
 	"fmt"
-	"github.com/whosonfirst/go-reader"
-	_ "gocloud.dev/blob/fileblob"
 	"io"
 	"io/ioutil"
 	"os"
 	"testing"
+
+	"github.com/whosonfirst/go-reader"
+	_ "gocloud.dev/blob/fileblob"
 )
 
 func TestFileReader(t *testing.T) {
