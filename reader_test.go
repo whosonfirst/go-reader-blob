@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/whosonfirst/go-reader"
+	"github.com/whosonfirst/go-reader/v2"
 	_ "gocloud.dev/blob/fileblob"
 )
 
