@@ -5,7 +5,7 @@ import (
 	"io"
 
 	"github.com/whosonfirst/go-ioutil"
-	wof_reader "github.com/whosonfirst/go-reader"
+	wof_reader "github.com/whosonfirst/go-reader/v2"
 	"gocloud.dev/blob"
 )
 
@@ -45,13 +45,17 @@ func NewBlobReader(ctx context.Context, uri string) (wof_reader.Reader, error) {
 
 func (r *BlobReader) Read(ctx context.Context, uri string) (io.ReadSeekCloser, error) {
 
-	fh, err := r.bucket.NewReader(ctx, uri, nil)
+	blob_r, err := r.bucket.NewReader(ctx, uri, nil)
 
 	if err != nil {
 		return nil, err
 	}
 
-	return ioutil.NewReadSeekCloser(fh)
+	return ioutil.NewReadSeekCloser(blob_r)
+}
+
+func (r *BlobReader) Exists(ctx context.Context, uri string) (bool, error) {
+	return r.bucket.Exists(ctx, uri)
 }
 
 func (r *BlobReader) ReaderURI(ctx context.Context, uri string) string {

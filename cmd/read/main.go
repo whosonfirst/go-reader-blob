@@ -4,9 +4,9 @@ import (
 	"context"
 	"log"
 
-	_ "github.com/whosonfirst/go-reader-blob"
+	_ "github.com/whosonfirst/go-reader-blob/v2"
 
-	"github.com/whosonfirst/go-reader/app/read"
+	"github.com/whosonfirst/go-reader/v2/app/read"
 )
 
 func main() {
