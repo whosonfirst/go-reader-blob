@@ -2,10 +2,12 @@ module github.com/whosonfirst/go-reader-blob/v2
 
 go 1.24
 
+toolchain go1.24.5
+
 require (
 	github.com/aaronland/gocloud-blob v0.5.0
 	github.com/whosonfirst/go-ioutil v1.0.2
-	github.com/whosonfirst/go-reader v1.1.0
+	github.com/whosonfirst/go-reader/v2 v2.0.0
 	gocloud.dev v0.42.0
 )
 
@@ -43,6 +45,8 @@ require (
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
 	github.com/jmespath/go-jmespath v0.4.0 // indirect
 	github.com/sfomuseum/go-flags v0.10.0 // indirect
+	github.com/whosonfirst/go-whosonfirst-sources v0.1.0 // indirect
+	github.com/whosonfirst/go-whosonfirst-uri v1.3.0 // indirect
 	go.opencensus.io v0.24.0 // indirect
 	golang.org/x/net v0.41.0 // indirect
 	golang.org/x/sys v0.33.0 // indirect
